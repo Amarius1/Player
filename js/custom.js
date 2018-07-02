@@ -20,8 +20,8 @@ var song = new Audio();
       'color':'#000',
     })
     parent.css({
-      'background-color':'#212121',
-      'color':'#fff',
+      'background-color':'#ff6d00',
+      'color':'#2196f3',
     })
 
     if(_this.attr('state') == 'stop' || typeof _this.attr('state') === 'undefined' ){
@@ -106,6 +106,7 @@ var song = new Audio();
   var repeat=0;
   $("#repeat").on('click',function(){
     if(repeat==0){
+		
       $(this).text('repeat_one');
       repeat=1;
     }
