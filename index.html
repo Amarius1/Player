@@ -18,7 +18,7 @@
 			{
 				position: absolute;
 				top: 200px;
-				left: 30%;
+				left: 27%;
 			
 			}
 	.center
@@ -40,7 +40,7 @@
 				left: -16%;
 			}
 			.randomc {
-			background-color: red;
+			background-color: black;
 			height:60px;
 			-webkit-transition: background-color 0.5s ease-in-out;
 			-moz-transition: background-color 0.5s ease-in-out;
@@ -137,7 +137,7 @@
   display: none;
   min-width: 180px; /* Changed this to accomodate content width */
   max-height: auto;
-	margin-left: 0%;
+	margin-left: 1%;
 		margin-top: 0%;/* Add this to keep dropdown in line with edge of navbar */
   overflow: hidden; /* Changed this from overflow-y:auto; to overflow:hidden; */
   opacity: 0;
@@ -147,6 +147,30 @@
   will-change: width, height;
   
 }</style>
+<style>
+   .dropdown2-content {
+  background-color: #f5f5f5;
+  margin: 0;
+  display: none;
+  min-width: 150px; /* Changed this to accomodate content width */
+  max-height: auto;
+	margin-left: -5%;
+		margin-top: 1%;/* Add this to keep dropdown in line with edge of navbar */
+  overflow: hidden; /* Changed this from overflow-y:auto; to overflow:hidden; */
+  opacity: 0;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+  will-change: width, height;
+  
+}
+.switch label input[type=checkbox]:checked+.lever:after {
+  background-color: #2196f3;
+}
+.switch label input[type=checkbox]:checked+.lever {
+  background-color: #64b5f6;
+}
+</style>
 	<style>
 	.customb{
 background-color: #f4f4f4;
@@ -172,21 +196,23 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	<a class="tooltipped z-depth-1 hoverable btn-floating btn-large waves-effect waves-light grey darken-4" data-delay="50" data-position="bottom" data-tooltip="Shuffle"><i id="shuffle" class="material-icons ico">shuffle</i></a>&nbsp&nbsp&nbsp&nbsp
 	<a class="tooltipped z-depth-1 hoverable btn-floating btn-large waves-effect waves-light blue-grey darken-4" data-delay="50" data-position="bottom" data-tooltip="Repeat"><i id="repeat" class="material-icons ico">repeat</i></a>&nbsp&nbsp&nbsp&nbsp
 	<a class="tooltipped z-depth-1 hoverable btn-floating btn-large waves-effect waves-light light-blue darken-4" data-delay="50" data-position="bottom" data-tooltip="Mute"><i id="volume" class="material-icons ico">volume_up</i></a></div>
-		<a style="border-radius: 32px 32px 32px 32px; position: absolute; left: 75.5%;" href="#!" data-activates="dropdown" data-beloworigin="true" class="dropdown-button goup waves-effect waves-light grey lighten-5 black-text btn">artists</a>
+		<a style="border-radius: 32px 32px 32px 32px; position: absolute; left: 75%;" href="#!" data-activates="dropdown" data-beloworigin="true" class="dropdown-button goup waves-effect waves-light grey lighten-5 black-text btn">artists</a>
+		<a style="position: absolute; top: 30%; left: 84.5%; background:#351412" href="#!" data-activates="dropdown2" data-beloworigin="true" data-target='dropdown2' class="dropdown-trigger goup btn-floating btn waves-effect waves-light"><i class="material-icons">settings</i></a>
+	
 	</div>
 	</div>
 	<div class="move container">
 	
-
-	<img onselectstart="return false" style="position: relative; left: 18%; top: -10px;" src="http://icons.iconarchive.com/icons/zhoolego/material/512/Music-icon.png" height="200"><br><br><br><br>
+	
+	<img onselectstart="return false" style="position: relative; left: 23%; top: -10px;" src="http://icons.iconarchive.com/icons/zhoolego/material/512/Music-icon.png" height="200"><br><br><br><br>
 
    <div class="row container">
   
 
   
 
-    <div style="border-radius: 12px 12px 10px 10px; height:1800px" class="hovereable col m10 s12 player z-depth-2 no-padding grey lighten-4">
-        <div style="border-radius: 10px 10px 0px 0px;"class="randomc musicplayer col s12 z-depth-2 ">
+    <div style="border-radius: 12px 12px 10px 10px; height:1800px" class="hovereable player z-depth-2 no-padding grey lighten-4">
+        <div style="border-radius: 10px 10px 0px 0px;"class="randomc musicplayer z-depth-2 ">
 			
           <div class="col s12">
 			<br>
@@ -198,8 +224,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 		<br><br>
 		
 		
-        <div class="playlist col s12 no-padding">
-          <ul class="collection with-header grey lighten-1">
+        <div class="playlist no-padding">
+          <ul class="collection with-header">
             <li class="collection-header"><h5><center>Playlist</center></h5></li>
             <li class="collection-item hoverable grey lighten-5"><div>Dark Horse - Katy Perry ft Juicy J <a href="#!" class='secondary-content'><i class="material-icons blue-text songPlay" data-link="Katy_Perry-Dark_Horse_feat-Juicy-J.mp3" data-name='Dark Horse Katy Perry ft Juicy J'>play_arrow</i></a></div></li>
             <li class="collection-item hoverable grey lighten-5"><div>Juicy Wiggle Redfoo <a href="#!" class="secondary-content"><i class="material-icons blue-text songPlay" data-link="Redfoo-Juicy_Wiggle.mp3" data-name='Juicy Wiggle Redfoo'>play_arrow</i></a></div></li>
@@ -280,10 +306,18 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       </div>
   
 	</ul>
-	
+	 <div href="index.html" style="border-radius: 10px 10px 10px 10px; width: 120px" id="dropdown2" class="dropdown2-content card">
+        <div href="index.html" class="card-content blue-text">
+			<p>
+			
+			<a href="index-dark.html" class="black-text">Dark Mode</a><i style="position: relative; left: 5%; top: 7px;" class="material-icons red-text">cancel</i>
+		  
+			</p>
+        </div>
+      </div>	
         
 	<center>
-	<a href="https://www.paypal.com/ro/cgi-bin/webscr?cmd=_flow&SESSION=b0f4FEYpeMs058Deie8RYxuVbZDJ9N-JGhTbbHOojB3c-o7neIWrEEGVfAy&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationLogin&rapidsStateSignature=8df571c9ff4c2297fad2626d72d510b967fc5f7a" style="border-radius: 90px 90px 90px 90px; left: -23%; height: 60px; width: 150px;" class="z-depth-1 pulse hoverable grey lighten-5 waves-effect waves-light btn black-text"><img src="https://www.freepngimg.com/download/paypal/2-2-paypal-logo-transparent-png.png" style="position: absolute; left: 10px; top: 15px;" height="30px" width="50px"><p style="position: absolute; left: 64px; top: -1px;">Donate</p></a>
+	<a href="https://www.paypal.com/ro/cgi-bin/webscr?cmd=_flow&SESSION=b0f4FEYpeMs058Deie8RYxuVbZDJ9N-JGhTbbHOojB3c-o7neIWrEEGVfAy&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationLogin&rapidsStateSignature=8df571c9ff4c2297fad2626d72d510b967fc5f7a" style="border-radius: 90px 90px 90px 90px; left: -17%; height: 60px; width: 150px;" class="z-depth-1 pulse hoverable grey lighten-5 waves-effect waves-light btn black-text"><img src="https://www.freepngimg.com/download/paypal/2-2-paypal-logo-transparent-png.png" style="position: absolute; left: 10px; top: 15px;" height="30px" width="50px"><p style="position: absolute; left: 64px; top: -1px;">Donate</p></a>
     </center>
 	<br><br><br>
 
@@ -313,6 +347,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	})(jQuery); // End of jQuery name space
 	</script>
 	<script>
+	$('.dropdown-trigger').dropdown();
+	</script>	<script>
 	const dp = new DPlayer({
 		container: document.getElementById('dplayer'),
 		video: {
@@ -347,7 +383,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 				}, time);
 		}
 		$(window).load(function () {
-			changeColor(".randomc", ["#424242", "#263238", "#004d40", "#006064", "#3e2723", "#dd2c00", "#ffab00", "#b71c1c", "#212121", "#37474f"], 3000);
+			changeColor(".randomc", ["#424242", "#263238", "#004d40", "#006064", "#3e2723", "#dd2c00", "#ffab00", "#b71c1c", "#212121", "#37474f"], 1600);
 		});
 	});
 	</script>
